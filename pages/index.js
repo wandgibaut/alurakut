@@ -20,7 +20,29 @@ function ProfileSidebar(props){
 }
 
 
-
+function ProfileRelationsBox(props){
+  return (
+    <ProfileRelationsBoxWrapper>
+          <h2 className="smallTitle">
+          {props.title} ({props.items.length})
+          </h2>
+          
+          <ul>
+            {props.items.slice(0, 6).map((item) => {
+              
+              return (
+              <li key={item}>
+                <a href = {`https://github.com/${item}.png`}> 
+                  <img src={`https://github.com/${item.login}.png`}/>
+                  <span> {item.title}</span>
+                </a>
+              </li>
+              )
+            })}
+          </ul>
+    </ProfileRelationsBoxWrapper>
+  )
+}
 
 
 export default function Home() {
@@ -33,6 +55,20 @@ export default function Home() {
     image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg'
   }]);
   
+  const [followers, setFollowers] = React.useState([]);
+  
+  
+  React.useEffect(function (){
+    const followers = fetch('https://api.github.com/users/wandgibaut/followers')
+    .then(function (resposta) {
+      return resposta.json();
+    })
+    .then(function (respostaJson) {
+      setFollowers(respostaJson);
+    })
+  }, []);
+
+
   return (
   <>
     <AlurakutMenu githubUser={githubUser}/>
@@ -103,6 +139,8 @@ export default function Home() {
           </ul>
         </ProfileRelationsBoxWrapper>
         
+        <ProfileRelationsBox title="Seguidores" items={followers}/>
+
         <ProfileRelationsBoxWrapper>
           <h2 className="smallTitle">
           Comunidades ({comunidades.length})

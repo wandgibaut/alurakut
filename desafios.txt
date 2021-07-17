@@ -1,0 +1,20 @@
+Desafios dessa aula!
+Pegar os dados da API do GitHub e listar seus seguidores
+Adicionar quão confiável, legal e sexy você é
+Usar Strategy ao invés de vários ifs no css
+Separar e organizar o seu código
+Publicar o seu projeto
+Deixar o seu projeto com a sua cara
+
+
+Criar suas comunidades para compartilhar com a gente;
+Facilitar o cadastro da url da imagem;
+Adicionar links para as suas comunidades
+Adicionar o seu projeto na nossa vitrine;
+Deixar o seu read me do projeto bonitão.
+
+
+
+Adicionar suas comunidades no DatoCMS;
+Organizar os seus dados, pensando no que irá querer que apareça no seu Alurakut e criando os modelos que precisar;
+Subir sua aplicação na Vercel.

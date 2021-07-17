@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+# api keys
+secrets.json
+
