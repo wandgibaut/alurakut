@@ -18,3 +18,9 @@ Deixar o seu read me do projeto bonitão.
 Adicionar suas comunidades no DatoCMS;
 Organizar os seus dados, pensando no que irá querer que apareça no seu Alurakut e criando os modelos que precisar;
 Subir sua aplicação na Vercel.
+
+
+Configurar suas variáveis de ambiente;
+Fazer os scraps;
+Subir sua aplicação na Vercel.
+
