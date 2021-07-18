@@ -99,6 +99,7 @@ export default function Home(props) {
             title
             imageUrl
             creatorSlug
+            pagelink
           }
         
           _allCommunitiesMeta {
@@ -160,13 +161,13 @@ export default function Home(props) {
             //setComunidades([...comunidades, comunidade])
             }}>
             
-            <button margin-right='10px'>
+            <button disabled={true}>
               Criar Comunidade
             </button>&nbsp;&nbsp;&nbsp;
-            <button>
+            <button disabled={true}>
               Escrever Depoimento
-            </button>&nbsp;&nbsp;&nbsp;
-            <button>
+            </button >&nbsp;&nbsp;&nbsp;
+            <button disabled={true}>
               Escrever um Scrap
             </button>
             <div>
@@ -199,7 +200,7 @@ export default function Home(props) {
               
               return (
               <li key={item.id}>
-                <a href = {`/users/${item.title}`}> 
+                <a href = {`${item.pagelink}`}> 
                   <img src={item.imageUrl}/>
                   <span> {item.title}</span>
                 </a>
@@ -239,6 +240,20 @@ export async function getServerSideProps(ctx) {
   }
 
   if (!githubUser) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    }
+  }
+
+  const {message} = await fetch(`https://api.github.com/users/${githubUser}`)
+  .then(function (resposta) {
+    return resposta.json();
+  })
+  console.log('exist', message)
+  if (message) {
     return {
       redirect: {
         destination: '/login',
