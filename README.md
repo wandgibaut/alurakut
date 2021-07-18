@@ -11,6 +11,14 @@ Uma versão funcional pode ser encontrada em produção, usando o [Vercel](https
 <br>
 
   [Alurakut - Wand](https://alurakut-mocha-one.vercel.app/) 
+  
+  
+
+![login](/src/imgs/login.png "página de login")
+
+<br>
+
+![home](/src/imgs/home.png "página principal")
 
 
 Espero que o projeto mate um pouco da saudade ;)
