@@ -1,6 +1,6 @@
 # Alurakut (Imersão React Alura)
 
-Esse projeto foi desenvolvido ao longo das 5 videos aulas do curso de Imersão React da [Alura](https://www.alura.com.br/) como parte dos exercícios de "mão na massa". Nessa imersão vimos conceitos de **ReactJS**, **NextJS** **CMS** entre outros.
+Esse projeto foi desenvolvido ao longo das 5 videos aulas do curso de Imersão React da [Alura](https://www.alura.com.br/) como parte dos exercícios de "mão na massa". Nessa imersão vimos conceitos de **React**, **Next.js** **CMS** entre outros.
 
 O projeto em si é basicamente um clone da já extinta - porém muito marcante no Brasil - rede social [Orkut](https://pt.wikipedia.org/wiki/Orkut). Como é facilmente observável, a applicação não apresenta todas as funcionalidades que existiram na versão original, dado que a implementação de tais funcionalidades envolveria maior dedicação de tempo.
 
@@ -10,7 +10,7 @@ Uma versão funcional pode ser encontrada em produção, usando o [Vercel](https
 
 <br>
 
-  [Alurakut - Wand](https://alurakut-mocha-one.vercel.app/) 
+  [Alurakut - Wand](https://alurakut-mocha-one.vercel.app/login) 
   
   
 
